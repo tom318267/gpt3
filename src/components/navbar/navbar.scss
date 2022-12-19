@@ -1,0 +1,66 @@
+$font-family: "Manrope", sans-serif;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+
+  &__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 2rem;
+    img {
+      width: 62.56px;
+      height: 16.02px;
+    }
+  }
+
+  &__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+
+    p a {
+      color: white;
+      font-family: $font-family;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      text-transform: capitalize;
+      margin: 0 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+  &__sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    p,
+    button {
+      font-family: $font-family;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      color: #fff;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      margin-left: 26px;
+      font-style: normal;
+      background: #ff4820;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}

@@ -7,7 +7,6 @@ $gradient-bg: radial-gradient(
 );
 $gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
 $gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
-$font-family: "Manrope", sans-serif;
 
 * {
   box-sizing: border-box;
@@ -19,7 +18,6 @@ $font-family: "Manrope", sans-serif;
 body {
   background: $gradient-bg;
   color: $text-color;
-  font-family: $font-family;
 }
 
 .section__padding {
