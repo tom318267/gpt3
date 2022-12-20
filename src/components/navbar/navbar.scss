@@ -1,10 +1,19 @@
 $font-family: "Manrope", sans-serif;
+$color-footer: "#031B34";
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 6rem;
+
+  @media (max-width: 550px) {
+    padding: 2rem;
+  }
+
+  @media (max-width: 700px) {
+    padding: 2rem 4rem;
+  }
 
   &__navbar-links {
     flex: 1;
@@ -61,6 +70,67 @@ $font-family: "Manrope", sans-serif;
       border: none;
       outline: none;
       cursor: pointer;
+    }
+  }
+
+  &__menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  &__menu-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: $color-footer;
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+  }
+
+  &__navbar-menu-container-links {
+    p a {
+      color: white;
+      text-decoration: none;
+      font-family: $font-family;
+    }
+  }
+
+  &__menu-container {
+    p {
+      margin: 1rem 0;
+    }
+  }
+
+  &__menu-container-links-sign {
+    display: none;
+  }
+
+  @media screen and (max-width: 550px) {
+    &__sign {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+    &__navbar-links_container {
+      display: none;
+    }
+
+    &__menu {
+      display: flex;
     }
   }
 }
